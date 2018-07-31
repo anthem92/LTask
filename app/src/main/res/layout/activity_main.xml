@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--This is for the drawer menu layout-->
+    <LinearLayout
+        android:id="@+id/left_drawer"
+        android:layout_width="250dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#FFFFFF">
+
+        <include layout="@layout/menu_layout"></include>
+
+    </LinearLayout>
+
+    <!-- This is for the contain main activity -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <!-- This is for toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/toolbarID">
+
+            <include layout="@layout/toolbar"></include>
+
+        </LinearLayout>
+
+        <!-- This is for Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/forContentBelowToolbar"
+            android:background="#dfe8f1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--Personal Detail Label -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/PersonalDetailLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/profile_PersonalDetail_txt"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            android:textColor="#1976d2"/>
+                        <!--End of Personal Detail Label -->
+                    </LinearLayout>
+
+                    <!--Personal Detail Main -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:layout_margin="10dp"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/ImageforProfile"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/ProfileNamaKaryawan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Jhon Rhoe"
+                            android:gravity="center"
+                            android:textColor="#1976d2"
+                            android:textSize="30sp"/>
+
+                        <TextView
+                            android:id="@+id/ProfileNomorKaryawan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="20161107"
+                            android:textColor="@color/LinovHR_TextColor"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/ProfileJabatanKaryawan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Designer"
+                            android:textColor="@color/LinovHR_TextColor"
+                            android:gravity="center"/>
+
+                        <!-- 4 Years 3 Months -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ic_business_center_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/Profile_LamaKerja"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/LinovHR_TextColor"
+                                android:text="4 Years 3 Months"
+                                android:paddingLeft="5dp"/>
+
+                        </LinearLayout>
+
+                        <!-- Technical Department -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ic_location_city_black_24dp"/>
+
+                            <TextView
+                                android:id="@+id/Profile_Departement"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/LinovHR_TextColor"
+                                android:text="Technical Department"
+                                android:paddingLeft="5dp"/>
+
+                        </LinearLayout>
+
+                        <!-- Time Group D -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ic_access_time_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/Profile_TimegroupD"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/LinovHR_TextColor"
+                                android:text="Timegroup D"
+                                android:paddingLeft="5dp"/>
+
+                        </LinearLayout>
+
+                        <!-- Payrollgroup A -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/ic_attach_money_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/Profile_PayrollgroupD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="@color/LinovHR_TextColor"
+                                android:text="Payrollgroup A"
+                                android:paddingLeft="5dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="@color/white">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_user" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp">
+                                <TextView
+                                    android:id="@+id/SUPERIOR"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="SUPERIOR"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+
+                                <TextView
+                                    android:id="@+id/TaufikHidayat"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Taufik Hidayat"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    <!--End of Personal Detail Main -->
+                    </LinearLayout>
+
+                    <!-- Basic Information -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:background="@color/white"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/BasicInformation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="BASIC INFORMATION"
+                                android:textStyle="bold"
+                                android:textColor="#333333"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+
+                                <ImageButton
+                                    android:id="@+id/create_BasicInformation"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_create"
+                                    android:background="@color/white"
+                                    android:layout_marginLeft="5dp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                        <!-- Beginning of GridLayout Basic Information -->
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:columnCount="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="BIRTH PLACE"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Jakarta"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="MARITAL STATUS"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Single"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="AGE"
+                                    android:textColor="@color/LinovHR_TextColor" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="26 Years 10 Months"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="NATIONALITY"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Indonesia"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="GENDER"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Male"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="RELIGION"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Islam"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                        <!--Contact Info-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:id="@+id/ContactInfo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CONTACT INFO"
+                                android:textStyle="bold"
+                                android:textColor="#333333" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+
+                                <ImageButton
+                                    android:id="@+id/create_ContactInfo"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_create"
+                                    android:background="@color/white"
+                                    android:layout_marginLeft="5dp"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <!-- Beginning of GridLayout Contact Info -->
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:columnCount="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginRight="41dp"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="EMAIL"
+                                    android:textColor="@color/LinovHR_TextColor" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="john.rhoe@gmail.com"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="EMERGENCY CONTACT"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Kartika (Mother)"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="089079309282" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="CONTACT NUMBER"
+                                    android:textColor="@color/LinovHR_TextColor" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="081123453132"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+
+                        <!--Social Media-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="SOCIAL MEDIA"
+                                android:textColor="@color/LinovHR_TextColor"/>
+
+                            <!--for linked in -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/linkedin"/>
+
+                                <TextView
+                                    android:paddingLeft="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="linkedin.com/in/jhonrhoe"
+                                    android:textColor="#1976d2"/>
+
+                            </LinearLayout>
+
+                            <!--for instagram -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="2dp">
+
+                                <ImageView
+                                    android:layout_width="15dp"
+                                    android:layout_height="15dp"
+                                    android:src="@drawable/instagram"/>
+
+                                <TextView
+                                    android:paddingLeft="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="instagram.com/jhonrhoe"
+                                    android:textColor="#1976d2"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!--Personality-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:id="@+id/PersonalityLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="PERSONALITY"
+                                android:textStyle="bold"
+                                android:textColor="#333333"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+
+                                <ImageButton
+                                    android:id="@+id/create_Personality"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_create"
+                                    android:background="@color/white"
+                                    android:layout_marginLeft="5dp"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="5dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="STRENGHTS"
+                                android:textColor="@color/LinovHR_TextColor"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Team Player, Discipline"
+                                android:textColor="@color/LinovHR_TextColor"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="5dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="WEAKNESS"
+                                android:textColor="@color/LinovHR_TextColor"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Bad Temper"
+                                android:textColor="@color/LinovHR_TextColor"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="5dp">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="HOBBIES"
+                                android:textColor="@color/LinovHR_TextColor"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Soccer, Music"
+                                android:textColor="@color/LinovHR_TextColor"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <!--Address-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:id="@+id/Address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ADDRESS"
+                                android:textStyle="bold"
+                                android:textColor="#333333" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+
+                                <ImageButton
+                                    android:id="@+id/create_Address"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_create"
+                                    android:background="@color/white"
+                                    android:layout_marginLeft="5dp"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/Address_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ADDRESS 1"
+                            android:textColor="@color/LinovHR_TextColor"/>
+
+                        <!-- Beginning of GridLayout Address -->
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:columnCount="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginRight="112dp"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="COUNTRY"
+                                    android:textColor="@color/LinovHR_TextColor" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Indonesia"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="STREET"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Jalan Casablanca"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="DISTRICT"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Setiabudi"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="CITY"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Jakarta Selatan"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="PROVINCE"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="DKI Jakarta"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+
+                            </LinearLayout>
+
+                        </GridLayout>
+
+
+                        <!--Family Member-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:id="@+id/FamilyMemberLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="FAMILY MEMBER"
+                                android:textStyle="bold"
+                                android:textColor="#333333" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+
+                                <ImageButton
+                                    android:id="@+id/create_FamilyMember"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_create"
+                                    android:background="@color/white"
+                                    android:layout_marginLeft="5dp"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/FamilyMember_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Family Member 1 (Father)"
+                            android:textColor="#8c919e"/>
+
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:columnCount="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginRight="114dp"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="NAME"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Suhartono"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="OCCUPATION"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Doctor"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="EDUCATION"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Bachelor"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                        <!--External Training-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:id="@+id/ExternalTrainingLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="EXTERNAL TRAINING"
+                                android:textStyle="bold"
+                                android:textColor="#333333"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+
+                                <ImageButton
+                                    android:id="@+id/create_ExternalTraining"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_create"
+                                    android:background="@color/white"
+                                    android:layout_marginLeft="5dp"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/ExternalTraining_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="External Training 1"
+                            android:textColor="#8c919e"/>
+
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:columnCount="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginRight="70dp"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="TRAINING NAME"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="English Course"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="EXPIRED DATE"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="27/12/2018"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                        <!--Document-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="15dp">
+
+                            <TextView
+                                android:id="@+id/DocumentLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="DOCUMENT"
+                                android:textStyle="bold"
+                                android:textColor="#333333"/>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+
+                                <ImageButton
+                                    android:id="@+id/create_Document"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:src="@drawable/ic_create"
+                                    android:background="@color/white"
+                                    android:layout_marginLeft="5dp"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/Document_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Document 1"
+                            android:textColor="@color/LinovHR_TextColor"/>
+
+                        <GridLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:columnCount="2">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginRight="57dp"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="DOCUMENT NAME"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Curriculum Vitae"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginRight="50dp"
+                                android:layout_marginBottom="5dp">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="EXPIRED DATE"
+                                    android:textColor="@color/LinovHR_TextColor"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="23/11/2020"
+                                    android:textColor="@color/LinovHR_TextColor"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                        </GridLayout>
+
+                        <!--End of Basic Information-->
+                    </LinearLayout>
+
+                <!-- End of containt that wrapped by the scrollview -->
+                </LinearLayout>
+
+                <!--End of Scrollview for Contain -->
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

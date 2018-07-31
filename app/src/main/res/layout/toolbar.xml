@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/toolbarMenuRL"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#1976d2">
+
+        <ImageView
+            android:id="@+id/toolbar_menu_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_dehaze_white"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LinovESS"
+            android:textColor="#1976d2"
+            android:layout_gravity="left"
+            android:textSize="25sp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:fontFamily="sans-serif-light"/>
+
+        <!-- layout for notifications -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="50dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_notifications"
+                android:layout_gravity="center" />
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/notification_dot"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_fiber_manual_record"
+                    android:paddingLeft="5dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--Layout for calender -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:paddingLeft="12dp">
+
+            <ImageView
+                android:id="@+id/calender"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_date_range"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <!--Layout for menuchild toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/childmenu_toolbar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_more_horiz"
+                android:layout_gravity="center"
+                android:paddingRight="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
