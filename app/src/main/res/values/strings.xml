@@ -1,17 +1,30 @@
 <resources>
-    <string name="app_name">LinovESS</string>
-
-    <string name="profile_PersonalDetail_txt">PERSONAL DETAIL</string>
-    <string name="timeSheet_txt">TIMESHEET</string>
-    <string name="event_txt">EVENT</string>
+    <string name="app_name">Linov<b>ESS</b></string>
+    <string name="signin_text">SIGN IN</string>
+    <string name="usernameloginlabel_text">Username</string>
+    <string name="passwordloginlabel_text">Password</string>
+    <string name="signinbutton_text">SIGN IN</string>
+    <string name="copyright" translatable="false">\u00A9 2018, Drife or its affiliates. All rights reserved</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_fullscreen">Fullscreen</string>
+    <string name="action_help">Help</string>
+    <string name="action_logout">Logout</string>
+    <string name="user_nav_header">Jhon Rhoe</string>
+    <string name="personal_detail_title">PERSONAL DETAIL</string>
+    <string name="date_first_time">20161107</string>
+    <string name="job_person">Designer</string>
+    <string name="work_duration">4 years 3 months</string>
+    <string name="job_position">Technical Department</string>
+    <string name="time_group">Timegroup D</string>
+    <string name="payroll_group">Payrollgroup A</string>
+    <string name="superior">S U P E R I O R</string>
+    <string name="superior_name">Taufik Hidayat</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
-    <string name="login_SignIn_txt">SIGN IN</string>
-    <string name="login_username">Username</string>
-    <string name="login_password">Password</string>
-    <string name="login_rememberMe">Remember Me</string>
-    <string name="login_copyright">Ⓒ 2018, Drife or its affiliates. All rights reserved</string>
-
 </resources>

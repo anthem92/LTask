@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.lawencon.expandablenew">
+    package="com.example.akira08.linovess">
 
     <application
         android:allowBackup="true"
@@ -8,28 +8,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".Login">
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".SplashscreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".Splashscreen" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".timesheet.TimeSheet" />
-        <activity android:name=".personalDetail.create_basicInformation" />
-        <activity android:name=".personalDetail.create_contactInfo" />
-        <activity android:name=".personalDetail.create_personality" />
-        <activity android:name=".personalDetail.create_address" />
-        <activity android:name=".personalDetail.create_familyMember" />
-        <activity android:name=".personalDetail.create_externalTraining" />
-        <activity android:name=".personalDetail.create_document" />
-        <activity android:name=".timesheet.ViewActivity_Timesheet" />
-        <activity android:name=".timesheet.AddActivity_TimeSheet" />
-        <activity android:name=".timesheet.EditActivity_TimeSheet" />
-        <activity android:name=".event.Event"></activity>
     </application>
 
 </manifest>
